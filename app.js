@@ -61,7 +61,9 @@ app.post('/convert', (req, res) => {
     const { value, fromUnit, toUnit } = req.body;
     let result;
 
-    if (fromUnit === 'pounds' && toUnit === 'kg') {
+    if (fromUnit === toUnit) {
+        result = "Cannot convert between the same units.";
+    } else if (fromUnit === 'pounds' && toUnit === 'kg') {
         result = poundsToKg(value);
     } else if (fromUnit === 'kg' && toUnit === 'pounds') {
         result = kgToPounds(value);
@@ -69,6 +71,8 @@ app.post('/convert', (req, res) => {
         result = dollarsToJD(value);
     } else if (fromUnit === 'JD' && toUnit === 'dollars') {
         result = jdToDollars(value);
+    } else {
+        result = "Conversion not supported.";
     }
 
     res.render('result', { value, fromUnit, toUnit, result });
