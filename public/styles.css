@@ -1,0 +1,181 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  /* Header styles */
+  .header {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
+
+  .header h1 {
+    margin-bottom: 10px;
+  }
+  
+  .header nav ul {
+    list-style-type: none;
+  }
+  
+  .header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .header nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+/* Style the footer */
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Main page styles */
+body {
+  font-family: serif, sans-serif;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(84,119,18,1) 0%, rgba(14,25,13,1) 94%, rgba(0,16,1,1) 100%);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"],
+select,
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: maroon;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: maroon;
+}
+
+  /* Reset some default styles */
+/* Styles for Shipping Cost Result page only */
+body.shipping-cost-result-page {
+  font-family: serif, sans-serif;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(84,119,18,1) 0%, rgba(14,25,13,1) 94%, rgba(0,16,1,1) 100%);
+
+}
+
+body.shipping-cost-result-page h1 {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 20px;
+}
+
+body.shipping-cost-result-page p {
+  color: whitesmoke;
+  font-size: 18px;
+  text-align: center;
+}
+
+body.shipping-cost-result-page a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(119,18,18,1) 0%, rgba(14,25,13,1) 94%, rgba(0,16,1,1) 100%);
+  text-decoration: none;
+}
+
+body.shipping-cost-result-page a:hover {
+  text-decoration: none;
+}
+
+body.shipping-cost-result-page .button-link {
+  display:flexbox;
+  align-items: center;
+  text-align: center;
+  justify-content:flex-start;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+body.shipping-cost-result-page .button-link:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Add a media query for phones */
+@media (max-width: 767px) {
+  /* Header styles */
+  .header {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .header h1 {
+    margin-bottom: 5px; /* Adjust margin for smaller screens */
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .header nav ul li {
+    margin-right: 10px; /* Adjust margin for smaller screens */
+  }
+
+  /* Footer styles */
+  .footer {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Main page styles */
+  h1 {
+    margin-top: 10px; /* Adjust margin for smaller screens */
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  form {
+    max-width: 100%; /* Full width for smaller screens */
+    margin: 0;
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  input[type="number"],
+  select,
+  button {
+    padding: 8px; /* Adjust padding for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+}
