@@ -9,10 +9,13 @@
 </head>
 <body class="shipping-cost-result-page">
     <h1>Conversion Result</h1>
-    <p><%= value %> <%= fromUnit %> is equal to <%= result %> <%= toUnit %></p>
+    <% if (result === "Cannot convert between the same units.") { %>
+        <p><%= result %></p>
+    <% } else if (result === "Conversion not supported.") { %>
+        <p><%= result %></p>
+    <% } else { %>
+        <p><%= value %> <%= fromUnit %> is equal to <%= result %> <%= toUnit %></p>
+    <% } %>
     <a href="/" class="button-link">Back to Conversion</a>
 </body>
 </html>
-
-
-
